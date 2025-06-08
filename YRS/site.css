@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: rubik;
+    text-align: center;
+    background:rgb(2, 2, 92);
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header {
+    border-radius: 10px;
+    border:2px rgb(255, 255, 255) solid;
+    display: flex;
+    align-items: center;
+    padding: 0.8%;
+    background: rgba(0, 0, 0, 0.5);
+    animation: slidedown 1.5s ease-in-out;
+    
+}
+
+.logo {
+    box-shadow: 0px 0px 20px 0px white;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    border-radius: 10px;
+    margin-left: 42.5%;
+    font-size: 24px;
+    animation: bounce 4s infinite ;
+}
+
+h2{
+    font-family: comeback;
+}
+.intro {
+    margin-top: 50px;
+    font-size: 30px;
+    animation: fadein 2s ease-in-out;
+}
+.who{
+    text-decoration: none;
+}
+.interducing{
+    text-decoration: none;
+    border: white 2px solid;
+    border-radius: 15px;
+    padding:5px;
+    background-color: rgba(245, 245, 245, 0.242);
+    color: rgb(255, 247, 0);
+}
+.favorites{
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 15px;
+    padding:5px;
+    color: rgba(0, 229, 255, 0.696);
+}
+.interphoto{
+     display: flex;
+    justify-content: center;
+}
+.mcbuilding{
+    height: 200px;
+    display: flex; 
+    border-radius: 20px;
+    border:rgba(61, 49, 49, 0.765) 2px solid;
+    transition: transform 0.5s;
+}
+.mcbuilding:hover{
+    transform: scale(1.25);
+}
+.playlist{
+        text-decoration: none;
+    border:double white 2px ;
+    border-radius: 10px;
+    padding:5px;
+    background-image:-webkit-repeating-linear-gradient( black, blue , black );
+    color: rgb(255, 247, 0);
+}
+ @media screen and (max-width : 800px) {
+    .headtext{
+        margin-left: 38%;
+    }
+ }
+  @media screen and (max-width : 150px) {
+    .headtext{
+        margin-left: 28%;
+    }
+ }
+@keyframes fadein3 {
+    from{scale: 1;}
+    to{scale: 1.25;}
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slidedown {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes bounce {
+    0%{
+    box-shadow: inset yellow 0px 0px 20px 0px;
+    }
+    10%{
+        box-shadow: inset rgb(255, 0, 102) 0px 0px 20px 0px;
+    }
+    20%{
+    box-shadow: inset red 0px 0px 20px 0px;
+    }
+    30%{
+        box-shadow: inset aqua 0px 0px 20px 0px;
+    }
+    40%{
+        box-shadow: inset fuchsia 0px 0px 20px 0px;
+    }
+    50%{
+        box-shadow: inset rgb(231, 4, 159) 0px 0px 20px 0px;
+    }  
+    60%{
+        box-shadow: inset rgb(0, 255, 94) 0px 0px 20px 0px;
+    }
+        70%{
+        box-shadow: inset rgb(51, 0, 255) 0px 0px 20px 0px;
+    }
+        80%{
+        box-shadow: inset rgb(255, 149, 0) 0px 0px 20px 0px;
+    }
+        100%{
+        box-shadow: inset rgb(255, 0, 43) 0px 0px 20px 0px;
+    }
+}
+@keyframes fadein2 {
+     from { opacity: 0;
+    rotate: 80deg; }
+    to { opacity: 1;
+    rotate: 0deg; }
+}
+@keyframes picanime {
+    10%{
+        rotate: 4000deg;
+    }
+    30%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+@font-face {
+    font-family: rubik;
+    src: url(./calibri.ttf);
+}
+@font-face {
+    font-family: comeback;
+    src: url(./Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: comeback;
+    src: url(./Rubik-VariableFont_wght.ttf);
+}
